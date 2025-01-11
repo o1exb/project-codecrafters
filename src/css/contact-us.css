@@ -211,7 +211,7 @@ a {
     }
 
     .rectangle-img {
-        height: 556px;
+        min-height: 556px;
     }
 
 }
@@ -227,7 +227,7 @@ a {
     }
 
     .container-form {
-        max-width: 460px;
+        width: 580px;
         padding: 50px 60px;
         margin-bottom: 0;
     }

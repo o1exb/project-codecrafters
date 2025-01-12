@@ -73,7 +73,7 @@ img {
     }
     @media screen and (min-width: 768px)
     {
-    .mobile-menu-close
+      .icon-close
         {
             width: 20px;
             height: 20px;

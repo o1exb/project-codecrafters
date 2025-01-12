@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 30px;
 }
 
 .advertisement {
@@ -72,6 +73,9 @@
     max-width: 576px;
     margin-bottom: 32px;
   }
+  .advertisement-container {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
@@ -86,6 +90,7 @@
     margin: 0;
     padding: 0;
     gap: 0 140px;
+    margin-top: 50px;
   }
   .advertisement {
     padding: 83px 60px;

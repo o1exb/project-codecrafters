@@ -157,7 +157,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 92px;
-    width: 279px;
+    width: 280px;
     height: 96px;
 }
 
@@ -165,7 +165,8 @@
     .footer-center-text {
         font-size: 28px;
         line-height: 1.14;
-        width: 524px;
+        /* width: 524px; */
+        width: 540px;
         /* змінив ширину */
         height: 96px;
         margin-top: 86px;

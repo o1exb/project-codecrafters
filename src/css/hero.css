@@ -2,7 +2,7 @@
  /* #region hero */
  .hero {
     position: relative;
-    padding: 60px 20px 0 20px;
+    padding-top: 60px;
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -36,6 +36,7 @@
         margin-bottom: 28px;
     }
     .avatars-scroll {
+      
         display: flex;
         align-items: flex-end;
         justify-content: space-between; 
@@ -93,7 +94,7 @@
       }
      @media (min-width: 768px) and (max-width: 1279px) {
      .hero {
-            padding: 80px 32px 0px 32px;
+            padding-top: 80px;
               display: flex;
               flex-direction: row;
                justify-content: space-between;
@@ -177,14 +178,14 @@ justify-content: end;
         }
 @media (min-width: 1280px) {
   .hero {
-      padding: 80px 65px 0px 65px;
+      padding-top: 80px;
       display: flex;
         justify-content: space-between;
   }
  .hero-container {
    flex: 1;
     display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-start;
       flex-direction: column;
       gap: 40px;

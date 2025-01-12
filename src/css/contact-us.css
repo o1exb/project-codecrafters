@@ -39,7 +39,7 @@ a {
 
 
 .section-contacts-up {
-    max-width: 335px;
+    max-width: 375px;
     margin: 0 auto;
     /* height: auto; */
 }
@@ -155,7 +155,7 @@ a {
     height: 512px;
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 768px) {
     .section-contacts-up {
         max-width: 704px;
     }
@@ -186,7 +186,6 @@ a {
         margin-bottom: 32px;
     }
 
-
     .name-inp {
         height: 52px;
         padding-left: 18px;
@@ -216,7 +215,7 @@ a {
 
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
     .section-contacts-up {
         max-width: 1150px;
     }

@@ -1,0 +1,45 @@
+ .reviews-title {
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 72px;
+   line-height: 150%;
+   color: #1b1d1f;
+   margin-bottom: 32px;
+   margin-top: 0;}
+
+
+.wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  position: relative;}
+
+ .facts {
+      text-align: center;
+    }
+
+.item {
+  width: calc((100% / 3) - (24px * 2)/3);
+}
+
+.reviews-item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #1b1d1f;
+  margin-top: 0;
+  margin-bottom: 32px;}
+
+    .facts-item-descr {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: #1b1d1f;
+      margin-bottom: 0;
+    }

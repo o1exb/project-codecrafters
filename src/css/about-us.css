@@ -6,7 +6,7 @@
     line-height: 100%;
     letter-spacing: -0.02em;
     color: var(--main);
-    margin-bottom: 20px;
+
 }
 
 .about-list {
@@ -16,8 +16,6 @@
     margin-bottom: 40px;
 }
 
-.about-paragraph,
-.about-paragraph-first {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -50,12 +48,7 @@
 
 .about-image {
     box-sizing: border-box;
-    border-radius: 30px;
-    border: none;
-    width: 100%;
-    margin-bottom: 20px;
-    /* Отступ для мобильной версии */
-}
+
 
 .about-block-text {
     background: var(--cards);
@@ -78,17 +71,7 @@
 }
 
 @media (min-width: 768px) {
-    .about-header {
-        font-family: var(--font-family);
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 92%;
-        letter-spacing: -0.02em;
-        color: var(--main);
-        margin-bottom: 20px;
-    }
 
-    .about-paragraph,
     .about-paragraph-first {
         font-family: var(--font-family);
         font-weight: 500;
@@ -96,7 +79,7 @@
         line-height: 125%;
         letter-spacing: -0.02em;
         color: rgba(12, 12, 12, 0.7);
-        width: 440px;
+
     }
 
     .about-block-text {
@@ -130,16 +113,12 @@
         margin-bottom: 0px;
     }
 
-    .about-header {
-        margin-bottom: 20px;
-    }
 
     .about-image {
         border-radius: 50px;
         width: 530px;
         height: 532px;
-        margin-bottom: 20px;
-        /* Отступ для настольной версии */
+
     }
 
     .about-list {
@@ -153,4 +132,4 @@
     .about-button {
         cursor: pointer;
     }
-}
+<

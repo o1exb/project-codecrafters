@@ -66,7 +66,8 @@ img {
     line-height: 100%;
     letter-spacing: -0.02em;
     color: var(--main);
-    margin-bottom: 28px;
+    margin-bottom: 0;
+    /* Убираем отступ для мобильной версии */
 }
 
 .about-list {
@@ -76,7 +77,8 @@ img {
     margin-bottom: 40px;
 }
 
-.about-paragraph {
+.about-paragraph,
+.about-paragraph-first {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -109,9 +111,11 @@ img {
 
 .about-image {
     box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
     width: 100%;
+    margin-bottom: 20px;
+    /* Отступ для мобильной версии */
 }
 
 .about-block-text {
@@ -135,26 +139,6 @@ img {
 }
 
 @media (min-width: 768px) {
-    .about-paragraph {
-        font-family: var(--font-family);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-        width: 566px;
-    }
-
-    .about-paragraph-first {
-        font-family: var(--font-family);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-        width: 566px;
-    }
-
     .about-header {
         font-family: var(--font-family);
         font-weight: 600;
@@ -162,6 +146,19 @@ img {
         line-height: 92%;
         letter-spacing: -0.02em;
         color: var(--main);
+        margin-bottom: 0;
+        /* Без отступа для планшета */
+    }
+
+    .about-paragraph,
+    .about-paragraph-first {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        color: rgba(12, 12, 12, 0.7);
+        width: 440px;
     }
 
     .about-block-text {
@@ -175,6 +172,11 @@ img {
 
     .about-section {
         padding: 40px 0px;
+    }
+
+    .about-image {
+        margin-bottom: 40px;
+        /* Дополнительный отступ для планшета */
     }
 }
 
@@ -195,10 +197,17 @@ img {
         margin-bottom: 0px;
     }
 
+    .about-header {
+        margin-bottom: 20px;
+        /* Отступ до изображения для десктопа */
+    }
+
     .about-image {
         border-radius: 50px;
         width: 530px;
         height: 532px;
+        margin-bottom: 0;
+        /* Убираем отступ для десктопа */
     }
 
     .about-list {
@@ -211,42 +220,5 @@ img {
 
     .about-button {
         cursor: pointer;
-    }
-}
-
-/* Mobile styles */
-@media (max-width: 767px) {
-    .about-paragraph {
-        width: 289px;
-    }
-
-    .about-paragraph-first {
-        width: 277px;
-        font-family: var(--font-family);
-        /* Make font the same as .about-paragraph */
-        font-weight: 500;
-        font-size: 14px;
-        /* Match font size */
-        line-height: 129%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-    }
-}
-
-/* Tablet styles */
-@media (min-width: 768px) and (max-width: 1279.98px) {
-
-    .about-paragraph,
-    .about-paragraph-first {
-        width: 566px;
-    }
-}
-
-/* Desktop styles */
-@media (min-width: 1280px) {
-
-    .about-paragraph,
-    .about-paragraph-first {
-        width: 440px;
     }
 }

@@ -8,12 +8,13 @@
     background-color: #ffffff;
   }
     .hero-container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        display: flex; 
         flex-direction: column;
         gap: 28px;
         width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .hero-title {
         font-weight: 600;
@@ -33,7 +34,6 @@
         letter-spacing: -0.02em;
         color: rgba(12, 12, 12, 0.7);
         height: 72px;
-        margin-bottom: 28px;
     }
     .avatars-scroll {
       

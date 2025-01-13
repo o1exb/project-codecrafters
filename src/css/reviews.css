@@ -9,13 +9,68 @@
   left: 65px;
  }
 
+ .wrapper {
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   top: 84px;
+   left: 65px;
+ }
+
+
+ .item {
+   width: calc((100% / 3) - (24px * 2)/3);
+   padding-right: 20px;
+   color: #0C0C0C66;
+   background: #F3F3F3;
+   border-radius: 30px;
+   padding: 32px 36px;
+   height: 272px;
+   max-height: 272px;
+ }
+
+ .hero {
+   width: 56px;
+   height: 56px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .reviews-item-title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 100%;
+   text-align: center;
+   color: #1b1d1f;
+   margin-top: 0;
+   margin-bottom: 32px;
+ }
+
+ .facts-item-descr {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   text-align: center;
+   color: #0C0C0C66 40%;
+   margin-bottom: 0;
+ }
+
 @media screen and (min-width: 1280px) {
+  .item-1,
+    .item-2,
+    .item-3 {
+      display: block;
+      /* Show the first two boxes */
+    }
+
  .wrapper {
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1170px;
   position: absolute;
   top: 84px;
   left: 65px;} 
@@ -28,6 +83,7 @@
   background: #F3F3F3;
   border-radius: 30px;
   padding: 32px 36px;
+  height: 272px;
 }
 
 .hero {
@@ -50,7 +106,6 @@
 }
 
     .facts-item-descr {
-      font-family: "Montserrat", sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
@@ -59,4 +114,63 @@
       margin-bottom: 0;
     }
 
+
+
   }
+    @media screen and (min-width: 768px) {
+      .item-1,
+        .item-2
+       {
+          display: block;
+          /* Show the first two boxes */
+        }
+.wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 84px;
+    left: 65px;
+  }
+
+
+  .item {
+    width: calc((100% / 3) - (24px * 2)/3);
+    padding-right: 20px;
+    color: #0C0C0C66;
+    background: #F3F3F3;
+    border-radius: 30px;
+    padding: 32px 36px;
+  }
+
+  .hero {
+    width: 56px;
+    height: 56px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews-item-title {
+    
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #1b1d1f;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .facts-item-descr {
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #0C0C0C66 40%;
+    margin-bottom: 0;
+  }
+
+    }

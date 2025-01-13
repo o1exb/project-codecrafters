@@ -1,63 +1,3 @@
-/*===========================================global=====================*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-:root {
-    --font-family: 'Gilroy', sans-serif;
-    --main: #0c0c0c;
-    --accent: #3350e9;
-    --background: #fbfbfb;
-    --cards: #f3f3f3;
-}
-
-body {
-    font-family: 'Gilroy', sans-serif;
-}
-
-section {
-    padding: 30px 0;
-}
-
-.hide {
-    display: none;
-}
-
-.container {
-    min-width: 320px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-@media (min-width: 768px) and (max-width: 1279.98px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
-    section {
-        padding: 40px 0;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding: 0 65px;
-    }
-
-    section {
-        padding: 50px 0;
-    }
-}
-
-img {
-    background-color: transparent;
-}
-
 /*=================about=============*/
 .about-header {
     font-family: var(--font-family);
@@ -66,7 +6,7 @@ img {
     line-height: 100%;
     letter-spacing: -0.02em;
     color: var(--main);
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .about-list {
@@ -76,7 +16,8 @@ img {
     margin-bottom: 40px;
 }
 
-.about-paragraph {
+.about-paragraph,
+.about-paragraph-first {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -109,9 +50,11 @@ img {
 
 .about-image {
     box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
     width: 100%;
+    margin-bottom: 20px;
+    /* Отступ для мобильной версии */
 }
 
 .about-block-text {
@@ -135,26 +78,6 @@ img {
 }
 
 @media (min-width: 768px) {
-    .about-paragraph {
-        font-family: var(--font-family);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-        width: 566px;
-    }
-
-    .about-paragraph-first {
-        font-family: var(--font-family);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 125%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-        width: 566px;
-    }
-
     .about-header {
         font-family: var(--font-family);
         font-weight: 600;
@@ -162,6 +85,18 @@ img {
         line-height: 92%;
         letter-spacing: -0.02em;
         color: var(--main);
+        margin-bottom: 20px;
+    }
+
+    .about-paragraph,
+    .about-paragraph-first {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        color: rgba(12, 12, 12, 0.7);
+        width: 440px;
     }
 
     .about-block-text {
@@ -195,10 +130,16 @@ img {
         margin-bottom: 0px;
     }
 
+    .about-header {
+        margin-bottom: 20px;
+    }
+
     .about-image {
         border-radius: 50px;
         width: 530px;
         height: 532px;
+        margin-bottom: 20px;
+        /* Отступ для настольной версии */
     }
 
     .about-list {
@@ -211,42 +152,5 @@ img {
 
     .about-button {
         cursor: pointer;
-    }
-}
-
-/* Mobile styles */
-@media (max-width: 767px) {
-    .about-paragraph {
-        width: 289px;
-    }
-
-    .about-paragraph-first {
-        width: 277px;
-        font-family: var(--font-family);
-        /* Make font the same as .about-paragraph */
-        font-weight: 500;
-        font-size: 14px;
-        /* Match font size */
-        line-height: 129%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-    }
-}
-
-/* Tablet styles */
-@media (min-width: 768px) and (max-width: 1279.98px) {
-
-    .about-paragraph,
-    .about-paragraph-first {
-        width: 566px;
-    }
-}
-
-/* Desktop styles */
-@media (min-width: 1280px) {
-
-    .about-paragraph,
-    .about-paragraph-first {
-        width: 440px;
     }
 }

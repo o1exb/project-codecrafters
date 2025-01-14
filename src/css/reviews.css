@@ -8,17 +8,15 @@
 }
 
 .reviews-list {
-  width: 100%;
+  max-width: 100%;
 }
 
 .item {
-  width: 335px;
+  max-width: 335px;
   color: #0c0c0c66;
   background: #f3f3f3;
   border-radius: 30px;
   padding: 32px 36px;
-  height: 262px;
-  margin-bottom: 8px;
 }
 
 .review-img {
@@ -32,14 +30,13 @@
 
 @media screen and (min-width: 768px) {
   .item {
-    width: 344px;
-    height: 272px;
+    max-width: 344px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .item {
-    width: 370px;
+    max-width: 370px;
   }
 }
 
@@ -72,8 +69,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
+  .reviews-container {
+    max-width: 704px;
   }
 
   .reviews-list {
@@ -108,8 +105,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1151px;
+  .reviews-container {
+    max-width: 1150px;
   }
 
   /* .item {
@@ -124,16 +121,14 @@
   .facts-item-descr {
     font-size: 16px;
     line-height: 1.25;
-    width: 280px;
-    height: 100px;
+    max-width: 280px;
   }
 
   @media screen and (min-width: 1280px) {
     .facts-item-descr-anastasia {
       font-size: 16px;
       line-height: 1.25;
-      width: 296px;
-      height: 100px;
+      max-width: 296px;
     }
   }
 

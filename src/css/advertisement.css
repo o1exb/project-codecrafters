@@ -3,17 +3,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.advertisement {
-  padding: 60px 8px;
-  width: 335px;
-  height: 363px;
   border-radius: 30px;
   border: 1px solid #000;
   background-image: url(../img/advertisement/bg-adv-mob-1x.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  padding: 60px 28px 60px 28px;
+}
+
+.advertisement {
+  max-width: 335px;
   margin: 0 auto;
 }
 
@@ -54,18 +54,18 @@
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .advertisement {
+  .advertisement-container {
     background-image: url(../img/advertisement/bg-adv-mob-2x.webp);
   }
 }
 
 @media screen and (min-width: 768px) {
   .advertisement {
-    padding: 80px 44px;
-    width: 704px;
-    height: 425px;
+    max-width: 704px;
+  }
+  .advertisement-container {
     background-image: url(../img/advertisement/bg-adv-tablet-1x.webp);
-    margin-top: 40px;
+    padding: 80px 64px 80px 64px;
   }
   .advertisement-text {
     font-size: 48px;
@@ -75,26 +75,36 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+  .advertisement {
+    max-width: 1150px;
+  }
+
+  .advertisement-container {
+    background-image: url(../img/advertisement/bg-adv-tablet-2x.webp);
+  }
+}
+
+@media screen and (min-width: 1150px) {
   .advertisement-container {
     align-items: flex-start;
     margin: 0;
     padding: 0;
     gap: 0 140px;
+    background-image: url(../img/advertisement/bg-adv-desktop-1x.webp);
+    padding: 83px 60px;
   }
   .advertisement {
-    padding: 83px 60px;
-    width: 1150px;
-    height: 298px;
-    background-image: url(../img/advertisement/bg-adv-desktop-1x.webp);
-    margin-top: 50px;
+    max-width: 1150px;
   }
   .advertisement-text {
     max-width: 690px;
     margin-bottom: 0;
   }
+}
 
-  .advertisement {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .advertisement-container {
     background-image: url(../img/advertisement/bg-adv-desktop-2x.webp);
   }
 }

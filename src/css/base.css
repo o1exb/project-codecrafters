@@ -44,6 +44,10 @@ img {
   height: auto;
 }
 
+section {
+  padding: 30px 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -69,10 +73,16 @@ img {
   .container {
     max-width: 768px;
   }
+  section {
+    padding: 40px 0;
+  }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1150px) {
   .container {
     max-width: 1280px;
+  }
+  section {
+    padding: 50px 0;
   }
 }

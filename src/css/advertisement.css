@@ -14,9 +14,7 @@
   background-image: url(../img/advertisement/bg-adv-mob-1x.webp);
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .advertisement-text {
@@ -77,24 +75,26 @@
   }
 }
 
-.advertisement-container {
-  align-items: flex-start;
-  margin: 0;
-  padding: 0;
-  gap: 0 140px;
-}
-.advertisement {
-  padding: 83px 60px;
-  width: 1150px;
-  height: 298px;
-  background-image: url(../img/advertisement/bg-adv-desktop-1x.webp);
-  margin-top: 50px;
-}
-.advertisement-text {
-  max-width: 690px;
-  margin-bottom: 0;
-}
+@media screen and (min-width: 1280px) {
+  .advertisement-container {
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 0 140px;
+  }
+  .advertisement {
+    padding: 83px 60px;
+    width: 1150px;
+    height: 298px;
+    background-image: url(../img/advertisement/bg-adv-desktop-1x.webp);
+    margin-top: 50px;
+  }
+  .advertisement-text {
+    max-width: 690px;
+    margin-bottom: 0;
+  }
 
-.advertisement {
-  background-image: url(../img/advertisement/bg-adv-desktop-2x.webp);
+  .advertisement {
+    background-image: url(../img/advertisement/bg-adv-desktop-2x.webp);
+  }
 }

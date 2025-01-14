@@ -39,11 +39,15 @@ a {
 
 
 .section-contacts-up {
-    max-width: 375px;
-    margin: 0 auto;
-    /* height: auto; */
+    padding: 30px 0;
 }
 
+.container-contacts {
+    min-width: 320px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 
 .contacts-title {
     font-weight: 600;
@@ -157,7 +161,12 @@ a {
 
 @media screen and (min-width: 768px) {
     .section-contacts-up {
-        max-width: 704px;
+        padding: 40px 0;
+    }
+
+    .container-contacts {
+        max-width: 768px;
+        padding: 0 32px;
     }
 
     .contacts-title {
@@ -191,7 +200,6 @@ a {
         padding-left: 18px;
     }
 
-
     .comment-container {
         min-height: 90px;
         padding: 16px;
@@ -216,7 +224,12 @@ a {
 
 @media screen and (min-width: 1280px) {
     .section-contacts-up {
-        max-width: 1150px;
+        padding: 40px 0;
+    }
+
+    .container-contacts {
+        max-width: 1280px;
+        padding: 0 65px;
     }
 
     .flex-container {

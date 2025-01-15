@@ -81,10 +81,9 @@
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
   .advertisement-container {
     align-items: flex-start;
-    margin: 0;
     padding: 0;
     gap: 0 140px;
     background-image: url(../img/advertisement/bg-adv-desktop-1x.webp);

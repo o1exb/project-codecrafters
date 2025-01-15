@@ -20,7 +20,7 @@
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
+  pointer-events: all;
 }
 
 .mobile-menu-container {
@@ -35,7 +35,6 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  border-radius: none;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
   display: flex;

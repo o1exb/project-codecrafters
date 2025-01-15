@@ -38,7 +38,7 @@ a {
 }
 
 .container-contacts {
-  min-width: 320px;
+  max-width: 375px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;

@@ -106,7 +106,7 @@ ul.catalog-list li:nth-child(n + 5) {
   flex-direction: column;
   white-space: nowrap;
   overflow: hidden;
-  min-width: 280px;
+  min-width: 335px;
 }
 
 @media screen and (min-width: 768px) {

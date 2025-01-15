@@ -1,28 +1,32 @@
 .mobile-menu {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
-  max-width: 100%;
-  max-height: 100%;
+  right: 0;
+  max-width: 200px;
+  max-height: 812px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
   background-image: url(/img/mobile/mob-menu-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
 }
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
+
 .mobile-menu-container {
   position: relative;
   padding-top: 240px;
-  padding-bottom: 50px;
-
+  padding-bottom: 470px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -34,7 +38,6 @@
   border-radius: none;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +49,11 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
+  .mobile-menu {
+    max-width: 330px;
+    max-height: 1024px;
+  }
+
   .icon-close {
     width: 20px;
     height: 20px;
@@ -69,6 +77,7 @@
 .container-media {
   justify-content: space-around;
   margin-top: auto;
+  padding-top: 260px;
 }
 .mobile-nav-link {
   font-weight: 500;
@@ -118,5 +127,11 @@
   .mobile-team-social-media-icon {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
   }
 }

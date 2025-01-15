@@ -28,12 +28,6 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .item {
-    max-width: 344px;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .item {
     max-width: 370px;
@@ -71,7 +65,6 @@
 @media screen and (min-width: 768px) {
   .reviews-container {
     max-width: 768px;
-    margin: 0 auto;
   }
 
   .reviews-list {

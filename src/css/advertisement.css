@@ -45,7 +45,7 @@
   white-space: nowrap;
   padding: 15px 43px 15px 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: auto;
+  cursor: pointer;
 }
 
 .advertisement-btn:hover,
@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
   .advertisement-container {
     background-image: url(../img/advertisement/bg-adv-tablet-2x.webp);
   }
@@ -96,7 +96,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .advertisement-container {
     background-image: url(../img/advertisement/bg-adv-desktop-2x.webp);
   }

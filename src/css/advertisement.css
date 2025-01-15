@@ -13,7 +13,6 @@
 }
 
 .advertisement {
-  max-width: 335px;
   margin: 0 auto;
 }
 
@@ -60,9 +59,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advertisement {
-    max-width: 704px;
-  }
   .advertisement-container {
     background-image: url(../img/advertisement/bg-adv-tablet-1x.webp);
     padding: 80px 64px 80px 64px;
@@ -94,9 +90,7 @@
     background-image: url(../img/advertisement/bg-adv-desktop-1x.webp);
     padding: 83px 60px;
   }
-  .advertisement {
-    max-width: 1150px;
-  }
+
   .advertisement-text {
     max-width: 690px;
     margin-bottom: 0;

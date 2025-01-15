@@ -102,7 +102,10 @@ ul.catalog-list li:nth-child(n + 5) {
   border-radius: 30px;
   padding: 24px 28px;
   box-sizing: border-box;
-  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {

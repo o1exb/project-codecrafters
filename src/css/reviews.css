@@ -70,7 +70,8 @@
 
 @media screen and (min-width: 768px) {
   .reviews-container {
-    max-width: 704px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .reviews-list {
@@ -106,7 +107,7 @@
 
 @media screen and (min-width: 1280px) {
   .reviews-container {
-    max-width: 1150px;
+    max-width: 1280px;
   }
 
   /* .item {
